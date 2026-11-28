@@ -18,7 +18,7 @@ window.SITE = {
   togetherSince: "2026-11-01T22:09:00+05:30", // 1 Nov 2026, 10:09 PM IST
 
   // Background music — audio only (hidden YouTube player of the official video)
-  music: { title: "Tum Ko Dekha To Yeh Khayal Aaya", artist: "Jagjit Singh & Chitra Singh", youtubeId: "EZJgQsMQDFw" }, // full song on repeat; add start/end (seconds) to loop just a part
+  music: { title: "Aaoge Jab Tum", artist: "Ustad Rashid Khan", youtubeId: "WPwTPhFMm3k" }, // full song on repeat; add start/end (seconds) to loop just a part
 
   specialDates: [
     {
