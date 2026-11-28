@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Love Story</title>
+  <meta name="description" content="Our love story among the mountains." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Josefin+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/bg/hero.jpg" media="(min-width: 761px)" />
+  <link rel="preload" as="image" href="assets/bg/hero-mobile.jpg" media="(max-width: 760px)" />
+  <link rel="stylesheet" href="styles.css?v=35" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏔️</text></svg>" />
+</head>
+<body class="locked">
+  <div class="intro" id="intro" role="dialog" aria-label="Welcome">
+    <div class="intro-mist" aria-hidden="true"></div>
+    <div class="intro-hearts" aria-hidden="true"><span style="--x:8%;--d:0s;--s:1"></span><span style="--x:18%;--d:3.5s;--s:0.7"></span><span style="--x:29%;--d:1.5s;--s:1.2"></span><span style="--x:41%;--d:5s;--s:0.8"></span><span style="--x:56%;--d:2.2s;--s:1"></span><span style="--x:67%;--d:4.2s;--s:0.6"></span><span style="--x:78%;--d:0.8s;--s:1.1"></span><span style="--x:89%;--d:3s;--s:0.75"></span><span style="--x:35%;--d:6s;--s:0.9"></span><span style="--x:72%;--d:6.5s;--s:0.85"></span></div>
+    <button class="medallion" id="intro-btn" type="button">
+      <span class="intro-line" id="intro-line"></span>
+      <span class="intro-name" id="intro-name"></span>
+      <span class="intro-hint" id="intro-hint"></span>
+    </button>
+  </div>
+  <div class="aura" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div id="petals" aria-hidden="true"></div>
+  <div id="sparkles" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <a href="#home" class="nav-brand">❀</a>
+    <a href="#dates">Our Dates</a>
+    <a href="#cute">Her Cuteness</a>
+    <a href="#shayari" id="nav-shayari">Shayari</a>
+    <a href="#letter">Letter</a>
+    <a href="#moments">Coming Soon</a>
+  </nav>
+
+  <!-- HERO: real photo of snow-capped peaks at sunset above a sea of clouds (Unsplash License) -->
+  <header id="home" class="hero">
+    <div class="photo layer" data-speed="0.35" aria-hidden="true">
+      <picture>
+        <source media="(max-width: 760px)" srcset="assets/bg/hero-mobile.jpg" />
+        <img src="assets/bg/hero.jpg" alt="" fetchpriority="high" />
+      </picture>
+    </div>
+    <div class="photo-tint" aria-hidden="true"></div>
+    <div class="mist m1" aria-hidden="true"></div>
+    <div class="mist m2" aria-hidden="true"></div>
+    <div class="birds" aria-hidden="true">
+      <svg class="bird b1" viewBox="0 0 30 12"><path d="M0 6 Q7 0 15 6 Q23 0 30 6"/></svg>
+      <svg class="bird b2" viewBox="0 0 30 12"><path d="M0 6 Q7 0 15 6 Q23 0 30 6"/></svg>
+      <svg class="bird b3" viewBox="0 0 30 12"><path d="M0 6 Q7 0 15 6 Q23 0 30 6"/></svg>
+    </div>
+    <div class="hero-fade" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="glass-card">
+        <p class="eyebrow" id="greeting"></p>
+        <h1 id="heroTitle"></h1>
+        <p class="names"><span id="heroNames"></span></p>
+        <p class="hashtag" id="heroHashtag"></p>
+        <p class="tagline" id="heroTagline"></p>
+        <p class="subline" id="heroSubline"></p>
+        <div class="counter" id="counter" aria-live="polite"></div>
+        <a href="#dates" class="btn" id="enter-btn">Enter Our Story ↓</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="dates" class="section photo-section bg-forest">
+      <div class="section-head">
+        <span class="motif" aria-hidden="true"></span>
+        <h2>Our Special Dates</h2>
+        <p>The days that changed everything</p>
+      </div>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+
+    <section id="cute" class="wall-section">
+      <div class="fairy-lights" aria-hidden="true">
+        <svg viewBox="0 0 1000 60" preserveAspectRatio="none"><path d="M0 5 Q250 60 500 15 Q750 60 1000 5" fill="none" stroke="#6b4f3a" stroke-width="1.5" vector-effect="non-scaling-stroke"/></svg>
+        <div class="bulbs" id="bulbs"></div>
+      </div>
+      <div class="section-head">
+        <span class="motif" aria-hidden="true"></span>
+        <h2>Her Cuteness</h2>
+        <p>Our little wall of her adorable moods</p>
+      </div>
+      <div class="photo-wall" id="photo-wall"></div>
+    </section>
+
+
+    <section id="shayari" class="section photo-section bg-calm dark">
+      <div class="section-head">
+        <span class="motif" aria-hidden="true"></span>
+        <h2>Shayari For You</h2>
+        <p>Words I wrote with your name in my heart</p>
+      </div>
+      <div class="shayari-grid" id="shayari-grid"></div>
+    </section>
+
+
+    <section id="letter" class="section letter-section photo-section bg-snow">
+      <div class="paper" id="paper">
+        <div class="stamp" aria-hidden="true"><span>🏔️</span></div>
+        <div class="postmark" aria-hidden="true">with love</div>
+        <button class="seal" id="seal" aria-expanded="false" aria-controls="letter-body">
+          <span>Open</span>
+        </button>
+        <div class="letter-body" id="letter-body" hidden>
+          <h2 id="letter-heading"></h2>
+          <div id="letter-text"></div>
+          <p class="signoff"><span id="letter-signoff"></span><br /><span id="letter-from"></span></p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="moments" class="section moments-section photo-section bg-sunset dark">
+      <div class="section-head">
+        <span class="motif" aria-hidden="true"></span>
+        <h2>Our Happy Moments</h2>
+        <p>Memories we are yet to make</p>
+      </div>
+      <div class="moments" id="moments-grid"></div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">×</button>
+    <img id="lightbox-img" alt="" />
+    <video id="lightbox-video" controls playsinline muted loop hidden></video>
+    <p id="lightbox-cap"></p>
+  </div>
+
+  <div class="music" id="music">
+    <div class="music-player" id="music-player" hidden></div>
+    <button class="music-btn" id="music-btn" type="button" aria-pressed="false">
+      <span class="disc" aria-hidden="true">♪</span>
+      <span class="music-label" id="music-label"></span>
+    </button>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-ridge" aria-hidden="true"></div>
+    <p>Made with ❤️ among the mountains</p>
+  </footer>
+
+  <script src="content.js?v=35"></script>
+  <script src="script.js?v=35"></script>
+</body>
+</html>
